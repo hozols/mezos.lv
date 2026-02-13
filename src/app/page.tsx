@@ -5,18 +5,15 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-[var(--color-forest-200)]">
-        <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="#" className="flex items-center gap-3">
+        <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
+          <a href="#" className="flex items-center gap-2">
             <Image
-              src="/logo.svg"
+              src="/logo.png"
               alt="SIA Meži logo"
-              width={36}
-              height={36}
-              className="rounded-full"
+              width={44}
+              height={44}
+              className="object-contain"
             />
-            <span className="text-xl font-bold text-[var(--color-forest-800)]">
-              SIA &ldquo;Meži&rdquo;
-            </span>
           </a>
           <div className="hidden sm:flex gap-8 text-sm">
             <a
@@ -48,7 +45,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <header className="relative pt-32 pb-20 px-6 bg-gradient-to-b from-[var(--color-forest-50)] to-white">
+      <header className="relative pt-28 pb-20 px-6 bg-gradient-to-b from-[var(--color-forest-50)] to-white">
         {/* Decorative tree silhouettes */}
         <div className="absolute inset-0 overflow-hidden opacity-[0.04] pointer-events-none">
           <svg
@@ -66,15 +63,14 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center relative">
           {/* Logo */}
           <div className="mb-8 flex justify-center">
-            <div className="w-28 h-28 rounded-full border-4 border-[var(--color-forest-300)] shadow-lg overflow-hidden">
-              <Image
-                src="/logo.svg"
-                alt="SIA Meži logo"
-                width={112}
-                height={112}
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <Image
+              src="/logo.png"
+              alt="SIA Meži logo"
+              width={180}
+              height={180}
+              className="object-contain"
+              priority
+            />
           </div>
 
           <div className="inline-block mb-6 px-4 py-1.5 rounded-full bg-[var(--color-forest-100)] text-[var(--color-forest-700)] text-sm font-medium">
@@ -93,12 +89,6 @@ export default function Home() {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#kontakti"
-              className="inline-block px-8 py-3.5 bg-[var(--color-forest-700)] text-white rounded-lg font-medium hover:bg-[var(--color-forest-800)] transition-colors"
-            >
-              Sazināties
-            </a>
-            <a
               href="https://wa.me/37128977533"
               target="_blank"
               rel="noopener noreferrer"
@@ -109,9 +99,37 @@ export default function Home() {
               </svg>
               WhatsApp
             </a>
+            <a
+              href="#kontakti"
+              className="inline-block px-8 py-3.5 bg-[var(--color-forest-700)] text-white rounded-lg font-medium hover:bg-[var(--color-forest-800)] transition-colors"
+            >
+              Sazināties
+            </a>
           </div>
         </div>
       </header>
+
+      {/* Forest Photos Gallery */}
+      <section className="px-6 pb-12 -mt-6 bg-white">
+        <div className="max-w-5xl mx-auto grid grid-cols-2 gap-4">
+          <div className="relative h-48 sm:h-64 rounded-2xl overflow-hidden shadow-md">
+            <Image
+              src="/forest1.png"
+              alt="Meža celiņš"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="relative h-48 sm:h-64 rounded-2xl overflow-hidden shadow-md">
+            <Image
+              src="/forest2.png"
+              alt="Bērzu mežs"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </section>
 
       {/* Services Section */}
       <section id="pakalpojumi" className="py-20 px-6 bg-white">
@@ -384,11 +402,11 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <Image
-                  src="/logo.svg"
+                  src="/logo.png"
                   alt="SIA Meži logo"
-                  width={32}
-                  height={32}
-                  className="rounded-full"
+                  width={40}
+                  height={40}
+                  className="object-contain"
                 />
                 <span className="text-lg font-semibold text-white">
                   SIA &ldquo;Meži&rdquo;
