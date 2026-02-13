@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <clipPath id="circle-clip">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+    <linearGradient id="sky-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#87CEEB"/>
+      <stop offset="60%" stop-color="#b8e6f0"/>
+      <stop offset="100%" stop-color="#d4edda"/>
+    </linearGradient>
+    <linearGradient id="ground-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a7c59"/>
+      <stop offset="100%" stop-color="#2d4a2d"/>
+    </linearGradient>
+  </defs>
+  <!-- Circle border -->
+  <circle cx="100" cy="100" r="96" fill="#3d6b3d" />
+  <circle cx="100" cy="100" r="90" fill="url(#sky-grad)" />
+  <g clip-path="url(#circle-clip)">
+    <!-- Ground -->
+    <ellipse cx="100" cy="195" rx="120" ry="50" fill="url(#ground-grad)"/>
+    <!-- Trees - back row -->
+    <polygon points="45,150 55,70 50,90 60,50 48,75 53,40 58,75 52,50 62,90 57,70 65,150" fill="#2d4a2d"/>
+    <polygon points="75,150 85,80 80,95 88,55 82,78 86,45 90,78 84,55 92,95 87,80 95,150" fill="#2d4a2d"/>
+    <polygon points="110,150 120,75 115,92 123,48 117,72 121,38 125,72 119,48 127,92 122,75 130,150" fill="#2d4a2d"/>
+    <polygon points="140,150 148,85 144,97 150,60 146,80 149,50 152,80 148,60 154,97 150,85 158,150" fill="#2d4a2d"/>
+    <!-- Trees - front row -->
+    <polygon points="30,155 42,90 36,108 45,60 38,85 42,45 46,85 40,60 48,108 42,90 54,155" fill="#3d6b3d"/>
+    <polygon points="60,155 70,85 66,100 73,55 68,77 71,42 74,77 70,55 76,100 72,85 82,155" fill="#3d6b3d"/>
+    <polygon points="90,155 102,80 96,98 105,50 98,73 102,35 106,73 100,50 108,98 102,80 114,155" fill="#3d6b3d"/>
+    <polygon points="125,155 134,88 130,102 137,58 132,79 135,48 138,79 134,58 140,102 136,88 145,155" fill="#3d6b3d"/>
+    <polygon points="150,155 158,92 154,105 160,65 156,82 159,55 162,82 158,65 164,105 160,92 168,155" fill="#3d6b3d"/>
+    <!-- Sun glow -->
+    <circle cx="155" cy="45" r="18" fill="#FFD700" opacity="0.6"/>
+    <circle cx="155" cy="45" r="12" fill="#FFE44D" opacity="0.8"/>
+  </g>
+</svg>
