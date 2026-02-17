@@ -5,16 +5,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[var(--color-forest-900)]/80 backdrop-blur-md border-b border-white/10">
-        <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
-          <a href="#" className="flex items-center gap-2">
-            <Image
-              src="/logo.png"
-              alt="SIA Meži logo"
-              width={44}
-              height={44}
-              className="object-contain"
-            />
-          </a>
+        <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-center">
           <div className="hidden sm:flex gap-8 text-sm">
             <a
               href="#pakalpojumi"
@@ -64,8 +55,8 @@ export default function Home() {
             <Image
               src="/logo.png"
               alt="SIA Meži logo"
-              width={160}
-              height={160}
+              width={320}
+              height={320}
               className="object-contain drop-shadow-lg"
               priority
             />
