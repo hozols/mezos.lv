@@ -379,8 +379,8 @@ export default function Home() {
                 <Image
                   src="/logo.png"
                   alt="SIA Meži logo"
-                  width={40}
-                  height={40}
+                  width={80}
+                  height={80}
                   className="object-contain"
                 />
                 <span className="text-lg font-semibold text-white">
