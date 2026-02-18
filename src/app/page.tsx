@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[var(--color-forest-900)]/80 backdrop-blur-md border-b border-white/10">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[var(--color-forest-900)]/80 border-b border-white/10">
         <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-center">
           <div className="hidden sm:flex gap-8 text-sm">
             <a
@@ -62,7 +62,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="inline-block mb-6 px-4 py-1.5 rounded-full bg-white/15 text-white/90 text-sm font-medium backdrop-blur-sm border border-white/20">
+          <div className="inline-block mb-6 px-4 py-1.5 rounded-full bg-white/15 text-white/90 text-sm font-medium border border-white/20">
             Meža apsaimniekošana
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6 drop-shadow-md">
@@ -379,8 +379,8 @@ export default function Home() {
                 <Image
                   src="/logo.png"
                   alt="SIA Meži logo"
-                  width={80}
-                  height={80}
+                  width={120}
+                  height={120}
                   className="object-contain"
                 />
                 <span className="text-lg font-semibold text-white">
