@@ -36,7 +36,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section with Background Image */}
-      <header className="relative min-h-screen flex items-center justify-center px-6">
+      <header className="relative min-h-screen flex items-center justify-center px-6 pb-24">
         {/* Background Image */}
         <Image
           src="/forest1.png"
@@ -89,10 +89,13 @@ export default function Home() {
               WhatsApp
             </a>
             <a
-              href="#kontakti"
-              className="inline-flex items-center justify-center px-8 py-3.5 bg-white/15 text-white rounded-lg font-medium hover:bg-white/25 transition-colors backdrop-blur-sm border border-white/30 shadow-lg"
+              href="tel:+37128977533"
+              className="inline-flex items-center justify-center gap-3 px-8 py-3.5 bg-white/15 text-white rounded-lg font-medium hover:bg-white/25 transition-colors backdrop-blur-sm border border-white/30 shadow-lg"
             >
-              Sazināties
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+              </svg>
+              +371 2897 7533
             </a>
           </div>
         </div>
@@ -379,8 +382,8 @@ export default function Home() {
                 <Image
                   src="/logo.png"
                   alt="SIA Meži logo"
-                  width={80}
-                  height={80}
+                  width={120}
+                  height={120}
                   className="object-contain"
                 />
                 <span className="text-lg font-semibold text-white">
