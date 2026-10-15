@@ -20,7 +20,6 @@ export const metadata: Metadata = {
   title: "SIA Meži — Meža apsaimniekošanas konsultācijas",
   description:
     "Meža apsaimniekošanas konsultācijas un meža darbu organizēšana. Godīgs un saprotams padoms pirms ciršanas un kopšanas.",
-  icons: { icon: "/logo.png" },
   openGraph: {
     title: "SIA Meži — Meža apsaimniekošanas konsultācijas",
     description:
